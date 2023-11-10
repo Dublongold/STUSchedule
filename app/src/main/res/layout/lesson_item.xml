@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.helpful.dpuschedule.views.custom.schedule.LessonView
+<com.helpful.stuSchedule.views.custom.schedule.LessonView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -74,4 +74,4 @@
             android:textColor="@color/lessons_text"
             tools:text="Викладачі: Яценко Людмила Михайлівна, Чорна Альона Ігорівна"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
-</com.helpful.dpuschedule.views.custom.schedule.LessonView>
+</com.helpful.stuSchedule.views.custom.schedule.LessonView>

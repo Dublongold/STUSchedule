@@ -19,11 +19,11 @@ android {
             keyAlias = "keySchedule"
         }
     }
-    namespace = "com.helpful.dpuschedule"
+    namespace = "com.helpful.stuSchedule"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.helpful.dpuschedule"
+        applicationId = "com.helpful.stuSchedule"
         minSdk = 24
         targetSdk = 34
         versionCode = 3

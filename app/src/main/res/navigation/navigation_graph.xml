@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loadingFragment"
-        android:name="com.helpful.dpuschedule.views.loading.LoadingFragment"
+        android:name="com.helpful.stuSchedule.views.loading.LoadingFragment"
         android:label="LoadingFragment"
         tools:layout="@layout/fragment_loading">
         <action
@@ -34,12 +34,12 @@
     </fragment>
     <fragment
         android:id="@+id/scheduleFragment"
-        android:name="com.helpful.dpuschedule.views.schedule.ScheduleFragment"
+        android:name="com.helpful.stuSchedule.views.schedule.ScheduleFragment"
         android:label="ScheduleFragment"
         tools:layout="@layout/fragment_schedule" />
     <fragment
         android:id="@+id/selectWeekdayFragment"
-        android:name="com.helpful.dpuschedule.views.selectWeekday.SelectWeekdayFragment"
+        android:name="com.helpful.stuSchedule.views.selectWeekday.SelectWeekdayFragment"
         android:label="SelectWeekdayFragment"
         tools:layout="@layout/fragment_select_weekday">
         <action
@@ -60,7 +60,7 @@
 
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.helpful.dpuschedule.views.receivingData.welcome.WelcomeFragment"
+        android:name="com.helpful.stuSchedule.views.receivingData.welcome.WelcomeFragment"
         android:label="WelcomeFragment"
         tools:layout="@layout/fragment_welcome">
         <action
@@ -73,7 +73,7 @@
     </fragment>
     <fragment
         android:id="@+id/structureFragment"
-        android:name="com.helpful.dpuschedule.views.receivingData.structure.StructureFragment"
+        android:name="com.helpful.stuSchedule.views.receivingData.structure.StructureFragment"
         android:label="StructureFragment"
         tools:layout="@layout/fragment_collecting_data">
         <action
@@ -86,7 +86,7 @@
     </fragment>
     <fragment
         android:id="@+id/facultyFragment"
-        android:name="com.helpful.dpuschedule.views.receivingData.faculty.FacultyFragment"
+        android:name="com.helpful.stuSchedule.views.receivingData.faculty.FacultyFragment"
         android:label="FacultyFragment"
         tools:layout="@layout/fragment_collecting_data">
         <action
@@ -99,7 +99,7 @@
     </fragment>
     <fragment
         android:id="@+id/confirmDataFragment"
-        android:name="com.helpful.dpuschedule.views.receivingData.confirmData.ConfirmDataFragment"
+        android:name="com.helpful.stuSchedule.views.receivingData.confirmData.ConfirmDataFragment"
         android:label="ConfirmDataFragment"
         tools:layout="@layout/fragment_confirm_data">
         <action
@@ -133,7 +133,7 @@
 
     <fragment
         android:id="@+id/courseFragment"
-        android:name="com.helpful.dpuschedule.views.receivingData.course.CourseFragment"
+        android:name="com.helpful.stuSchedule.views.receivingData.course.CourseFragment"
         android:label="CourseFragment"
         tools:layout="@layout/fragment_collecting_data">
         <action
@@ -146,7 +146,7 @@
     </fragment>
     <fragment
         android:id="@+id/groupFragment"
-        android:name="com.helpful.dpuschedule.views.receivingData.group.GroupFragment"
+        android:name="com.helpful.stuSchedule.views.receivingData.group.GroupFragment"
         android:label="GroupFragment"
         tools:layout="@layout/fragment_collecting_data">
         <action
@@ -159,7 +159,7 @@
     </fragment>
     <fragment
         android:id="@+id/dataChangedFragment"
-        android:name="com.helpful.dpuschedule.views.receivingData.dataChanged.DataChangedFragment"
+        android:name="com.helpful.stuSchedule.views.receivingData.dataChanged.DataChangedFragment"
         android:label="DataChangedFragment"
         tools:layout="@layout/fragment_data_changed">
         <action
@@ -172,7 +172,7 @@
     </fragment>
     <fragment
         android:id="@+id/wantChangeFragment"
-        android:name="com.helpful.dpuschedule.views.receivingData.wantChangeGroup.WantChangeFragment"
+        android:name="com.helpful.stuSchedule.views.receivingData.wantChangeGroup.WantChangeFragment"
         android:label="WantChangeFragment"
         tools:layout="@layout/fragment_want_change_group">
         <action

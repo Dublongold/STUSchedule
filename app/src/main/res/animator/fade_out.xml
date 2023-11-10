@@ -1,0 +1,6 @@
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:propertyName="alpha"
+    android:duration="@android:integer/config_mediumAnimTime"
+    android:valueFrom="1f"
+    android:valueTo="0f"
+    android:valueType="floatType"/>

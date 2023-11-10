@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="current_item">@color/white</color>
+
+    <color name="break_between_lessons">#FF47A947</color>
+    <color name="lecture_lesson">#FF47A947</color>
+    <color name="practical_lesson">#FF4747A9</color>
+    <color name="seminar_lesson">#FFA94747</color>
+    <color name="laboratory_lesson">#FFA9A947</color>
+
+    <color name="lesson_background">#FF474747</color>
+
+    <color name="lessons_text">#FFFFFF</color>
+</resources>

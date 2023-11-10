@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_weekday_options">
+        <item>Сьогодні</item>
+        <item>Понеділок</item>
+        <item>Вівторок</item>
+        <item>Середа</item>
+        <item>Четверг</item>
+        <item>П\'ятниця</item>
+        <item>Обрати власний</item>
+    </string-array>
+    <string-array name="date_error_messages">
+        <item>Ваша дата не повинна бути пустою.</item>
+        <item>Ваша дата має бути в наступному форматі: РРРР-ММ-ДД, де Р - рік, М - місяць і Д - день місяця. Символи навколо \"-\" повинні бути тільки числами.</item>
+        <item>Ваша дата повинна складатися лише з чисел та двух символів \"-\".</item>
+        <item>Ваш рік повиний бути в межах від %d до %d.</item>
+        <item>Ваш місяць має бути в межах від 1 до 12 (якщо що, місяць - це друге число).</item>
+        <item>Ваш день місяця має бути від 1 до %d</item>
+        <item>Але… Я не знаю що не так..</item>
+    </string-array>
+    <string-array name="very_short_lesson_types">
+        <item>ЛК</item>
+        <item>ПЗ</item>
+        <item>СЕМ</item>
+        <item>ЛАБ</item>
+    </string-array>
+    <string-array name="short_lessons_type">
+        <item>Лекція</item>
+        <item>Практична</item>
+        <item>Семінар</item>
+        <item>Лабораторна</item>
+    </string-array>
+    <string-array name="full_lessons_type">
+        <item>Лекційне заняття</item>
+        <item>Практичне заняття</item>
+        <item>Семінарське заняття</item>
+        <item>Лабораторне заняття</item>
+    </string-array>
+    <string-array name="full_weekdays">
+        <item>Неділя</item>
+        <item>Понеділок</item>
+        <item>Вівторок</item>
+        <item>Середа</item>
+        <item>Четверг</item>
+        <item>П\'ятниця</item>
+        <item>Субота</item>
+    </string-array>
+    <string-array name="short_weekdays">
+        <item>Нд</item>
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Чт</item>
+        <item>Пт</item>
+        <item>Сб</item>
+    </string-array>
+</resources>

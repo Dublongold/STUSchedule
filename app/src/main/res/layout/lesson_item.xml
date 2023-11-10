@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.helpful.dpuschedule.views.custom.schedule.LessonView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/lesson_background"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@id/lessonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lessons_text"
+            tools:text="Пара 1"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@id/lessonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lessons_text"
+            tools:text="99:99"/>
+        <TextView
+            android:id="@id/lessonEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lessons_text"
+            tools:text="99:99"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@id/lessonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lessons_text"
+                tools:text="БЖД"/>
+            <TextView
+                android:id="@id/lessonType"
+                android:layout_marginStart="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lessons_text"
+                tools:text="(Лабораторне заняття)"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <TextView
+            android:id="@id/lessonClassrooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/lessons_text"
+            tools:text="Аудиторія: B313"/>
+        <TextView
+            android:id="@id/lessonTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/lessons_text"
+            tools:text="Викладачі: Яценко Людмила Михайлівна, Чорна Альона Ігорівна"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.helpful.dpuschedule.views.custom.schedule.LessonView>

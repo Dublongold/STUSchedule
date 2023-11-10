@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="teachers">
+        <item quantity="one">Викладач: %s</item>
+        <item quantity="other">Викладачі: %s</item>
+    </plurals>
+    <plurals name="classrooms">
+        <item quantity="one">Аудиторія: <![CDATA[<b>%s</b>]]></item>
+        <item quantity="other">Аудиторії: <![CDATA[<b>%s</b>]]></item>
+    </plurals>
+</resources>

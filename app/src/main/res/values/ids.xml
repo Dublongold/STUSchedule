@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="lessonNumber" type="id"/>
+    <item name="lessonStart" type="id"/>
+    <item name="lessonEnd" type="id"/>
+    <item name="lessonName" type="id"/>
+    <item name="lessonType" type="id"/>
+    <item name="lessonClassrooms" type="id"/>
+    <item name="lessonTeacher" type="id"/>
+</resources>

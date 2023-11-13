@@ -14,7 +14,7 @@ class RealTimeUpdatesChecker {
         wordTime: WordTime,
         selectedDate: String,
         lessons: List<Lesson?>,
-        callback: suspend (ScheduleAdapter, WordTime, Int, Boolean, Boolean) -> Unit
+        callback: suspend (ScheduleAdapter, WordTime, Int, Boolean?) -> Unit
     ) {
         val timeOfScheduleItemEnd = IntArray(1)
         val timeNow = TimeConverter.convertToMinutes(wordTime.time)
@@ -34,7 +34,7 @@ class RealTimeUpdatesChecker {
                         "timeEnd: $timeOfScheduleItemEnd. " +
                         "timeNow: $timeNow"
             )
-            callback(adapter, wordTime, timeOfScheduleItemEnd[0], currentLesson != null, true)
+            callback(adapter, wordTime, timeOfScheduleItemEnd[0], currentLesson != null)
         } else {
             lessonsIsPass(adapter, lessons, selectedDate, wordTime, timeOfScheduleItemEnd, callback)
         }
@@ -46,7 +46,7 @@ class RealTimeUpdatesChecker {
         selectedDate: String,
         wordTime: WordTime,
         timeOfScheduleItemEnd: IntArray,
-        callback: suspend (ScheduleAdapter, WordTime, Int, Boolean, Boolean) -> Unit
+        callback: suspend (ScheduleAdapter, WordTime, Int, Boolean?) -> Unit
     ) {
         val timeNow = TimeConverter.convertToMinutes(wordTime.time)
         if (selectedDate == wordTime.date) {
@@ -60,7 +60,7 @@ class RealTimeUpdatesChecker {
             if (timeOfScheduleItemEnd[0] != 0
                 && ScheduleItemPassChecker.lessonsIsPass(timeNow, timeOfScheduleItemEnd[0])
             ) {
-                callback(adapter, wordTime,timeOfScheduleItemEnd[0] + 15, false, false)
+                callback(adapter, wordTime,timeOfScheduleItemEnd[0] + 15, null)
             }
         } else {
             Log.i(

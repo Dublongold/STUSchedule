@@ -25,7 +25,7 @@ class ScheduleViewModel : ViewModel() {
         DATA_LOADED_STATE_LOADING
     )
     private val mutableGroupId = MutableStateFlow(-1)
-    private val mutableIsLessonToTimeLeft =
+    private val mutableIsLessonToTimeLeft: MutableStateFlow<Pair<Boolean?, Int>> =
         MutableStateFlow(true to -1)
     val realTimeCancellationToken =
         MutableStateFlow(CancellationTokenManager()).asStateFlow()
@@ -38,7 +38,7 @@ class ScheduleViewModel : ViewModel() {
     val date: StateFlow<String>
         get() = mutableDate
 
-    val isLessonToTimeLeft: StateFlow<Pair<Boolean, Int>>
+    val isLessonToTimeLeft: StateFlow<Pair<Boolean?, Int>>
         get() = mutableIsLessonToTimeLeft
 
     private val groupId: StateFlow<Int>
@@ -75,14 +75,13 @@ class ScheduleViewModel : ViewModel() {
         }
         val request2 = viewModelScope.launch {
             wordTime = wordTimeClient.getKyivTime()
-            adapter.setWordTime(wordTime)
-//            For debug changes in real time
+//=========== For debug changes in real time =======================================================
 //            .also {
 //                if (times < 4) {
 //                    times++
 //                    val beforeTime = it.datetime.substring(0, it.datetime.indexOf('T') + 1)
 //                    val time = when (times) {
-//                        1 -> "12:49:55"
+//                        1 -> "12:48:55"
 //                        2 -> "13:09:55"
 //                        3 -> "14:29:55"
 //                        4 -> "14:44:55"
@@ -96,7 +95,8 @@ class ScheduleViewModel : ViewModel() {
 //                    it.datetime = beforeTime + time + afterTime
 //                }
 //            }
-//            End of debug code
+//=========== End of debug code ====================================================================
+            adapter.setWordTime(wordTime)
         }
 
         for (request in listOf(request1, request2)) {
@@ -127,8 +127,7 @@ class ScheduleViewModel : ViewModel() {
         adapter: ScheduleAdapter,
         wordTime: WordTime,
         timeEnd: Int,
-        isLesson: Boolean,
-        needCalculateEndTime: Boolean
+        isLesson: Boolean?,
     ) {
         val cancellationToken = realTimeCancellationToken.value.getToken()
         var seconds = wordTime.time.substring(
@@ -136,8 +135,8 @@ class ScheduleViewModel : ViewModel() {
             wordTime.time.length
         ).toLongOrNull()
 
-        if(needCalculateEndTime) {
-            mutableIsLessonToTimeLeft.value = false to -1
+        if(isLesson == null) {
+            mutableIsLessonToTimeLeft.value = null to -1
         }
 
         mutableIsLessonToTimeLeft.update {
@@ -151,7 +150,7 @@ class ScheduleViewModel : ViewModel() {
         if (seconds != null && mutableIsLessonToTimeLeft.value.second <= 80) {
             while (mutableIsLessonToTimeLeft.value.second != 0 && !cancellationToken.isCancelled()) {
                 delay(1000L * (60L - (seconds ?: 0)))
-                if (needCalculateEndTime && !cancellationToken.isCancelled()) {
+                if (!cancellationToken.isCancelled()) {
                     mutableIsLessonToTimeLeft.update {
                         it.first to it.second - 1
                     }
@@ -169,12 +168,9 @@ class ScheduleViewModel : ViewModel() {
                 )
             }
         }
-        if(cancellationToken == realTimeCancellationToken.value.getToken()) {
-            realTimeCancellationToken.value.cancelAndChange()
-        }
-        else {
-            cancellationToken.cancel()
-            Log.i(LOG_TAG, "Cancellation token changed.")
+        if(cancellationToken == realTimeCancellationToken.value.getToken()
+            && cancellationToken.isInProcess()) {
+            realTimeCancellationToken.value.finishAndChange()
         }
         Log.i(LOG_TAG, "[updateSchedule] End work.\n" +
                 "Cancellation token: $cancellationToken (isCancelled == " +

@@ -1,6 +1,6 @@
 package com.helpful.stuSchedule.helpful
 
-import com.helpful.stuSchedule.models.CancellationToken
+import com.helpful.stuSchedule.models.cancellationToken.CancellationToken
 import kotlinx.coroutines.flow.MutableStateFlow
 
 class CancellationTokenManager {
@@ -10,18 +10,32 @@ class CancellationTokenManager {
         token.value.cancel()
     }
 
+    fun inProcess() {
+        token.value.inProcess()
+    }
+
     fun change() {
         token.value = CancellationToken()
     }
 
-    fun cancelAndChange() {
-        cancel()
+    fun finishAndChange() {
+        finish()
         change()
     }
 
+    fun finish() {
+        token.value.finish()
+    }
+
     fun isCancelled() = token.value.isCancelled()
+    fun isInProcess() = token.value.isInProcess()
+
+    fun workIsFinished() = token.value.isCancelled() || token.value.isFinished()
 
     fun getToken(): CancellationToken {
+        if (token.value.isFinished()) {
+            change()
+        }
         return token.value
     }
 }

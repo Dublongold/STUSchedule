@@ -2,6 +2,7 @@ package com.helpful.stuSchedule.views.schedule
 
 import android.content.Context.MODE_PRIVATE
 import android.os.Bundle
+import android.util.Log
 import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
@@ -38,6 +39,9 @@ class ScheduleFragment: Fragment() {
     private lateinit var lessonsLoading: ProgressBar
     private lateinit var realTimeUpdateLoadingComponents: LinearLayoutCompat
     private lateinit var endTimeOfScheduleItemMessage: TextView
+
+    private val Int.dp
+        get() = (this / resources.displayMetrics.density).toInt()
 
     private val weekday
         get() = arguments?.getInt(ARGUMENT_WEEKDAY) ?: 0
@@ -97,7 +101,8 @@ class ScheduleFragment: Fragment() {
         viewLifecycleOwner.lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.isLessonToTimeLeft.collect {
-                    if(it.second != -1) {
+                    val isLesson = it.first
+                    if(it.second != -1 && isLesson != null) {
                         endTimeOfScheduleItemMessage.run {
                             layoutParams = ConstraintLayout.LayoutParams(
                                 ConstraintLayout.LayoutParams.MATCH_PARENT,
@@ -107,10 +112,11 @@ class ScheduleFragment: Fragment() {
                                 startToStart = ConstraintLayout.LayoutParams.PARENT_ID
                                 endToEnd = ConstraintLayout.LayoutParams.PARENT_ID
                             }
+                            setPadding(0, 15.dp, 0, 15.dp)
                             text = getString(
                                 R.string.end_time_of_schedule_item,
                                 getString(
-                                    if (it.first)
+                                    if (isLesson)
                                         R.string.of_lesson
                                     else
                                         R.string.of_break_between_lessons
@@ -120,6 +126,7 @@ class ScheduleFragment: Fragment() {
                         }
                     }
                     else {
+                        Log.i(LOG_TAG, "Was set.")
                         endTimeOfScheduleItemMessage.run{
                             layoutParams = ConstraintLayout.LayoutParams(
                                 ConstraintLayout.LayoutParams.MATCH_PARENT,
@@ -129,6 +136,7 @@ class ScheduleFragment: Fragment() {
                                 startToStart = ConstraintLayout.LayoutParams.PARENT_ID
                                 endToEnd = ConstraintLayout.LayoutParams.PARENT_ID
                             }
+                            setPadding(0, 0, 0, 0)
                             text = null
                         }
 
@@ -185,15 +193,15 @@ class ScheduleFragment: Fragment() {
 
     override fun onResume() {
         super.onResume()
-        if(viewModel.realTimeCancellationToken.value.isCancelled()) {
+        if(viewModel.realTimeCancellationToken.value.workIsFinished()) {
             viewModel.realTimeCancellationToken.value.change()
             viewModel.setDataStateAsUpdates()
             setSchedule(false)
         }
     }
 
-    override fun onStop() {
-        super.onStop()
+    override fun onPause() {
+        super.onPause()
         viewModel.realTimeCancellationToken.value.cancel()
     }
 

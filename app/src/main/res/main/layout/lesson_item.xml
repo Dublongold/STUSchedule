@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.helpful.stuSchedule.ui.main.views.custom.LessonView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="10dp"
+    android:padding="10dp"
+    android:background="@drawable/lesson_background">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lessonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Пара 1" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/lessonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="99:99"/>
+        <TextView
+            android:id="@+id/lessonEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="99:99"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start">
+
+        <TextView
+            android:id="@+id/lessonName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/lessonType"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="БЖД" />
+
+        <TextView
+            android:id="@+id/lessonType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Лабораторне\nзаняття" />
+
+        <TextView
+            android:id="@+id/lessonClassrooms"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/lessonType"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lessonName"
+            tools:text="Аудиторія: B313" />
+
+        <TextView
+            android:id="@+id/lessonTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lessonClassrooms"
+            tools:text="Викладачі: Яценко Людмила Михайлівна, Чорна Альона Ігорівна" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.helpful.stuSchedule.ui.main.views.custom.LessonView>

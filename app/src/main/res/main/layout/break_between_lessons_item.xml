@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.helpful.stuSchedule.ui.main.views.custom.BreakBetweenLessonsView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:backgroundTint="@color/break_between_lessons"
+    android:background="@drawable/lesson_background"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:id="@+id/breakText"
+        android:tag="static_text_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:text="Перерва між парами: 120 хв."/>
+</com.helpful.stuSchedule.ui.main.views.custom.BreakBetweenLessonsView>

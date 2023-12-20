@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Titles -->
+    <string name="settings_title">Settings</string>
+    <string name="info_about_app_title">App\nInformation</string>
+    <string name="list_of_students_title">List of students\nfor group %s</string>
+    <!-- Content -->
+    <!--    Settings -->
+    <string name="theme_label">Theme:</string>
+    <string name="select_text_color_on_orange">Select text color on orange background:</string>
+    <string name="some_help_information">Some explanations:
+        \n
+        \n • About \"Select color on orange background\": When choosing the orange theme or when there
+        are laboratory classes in the schedule, I had a question:\"Which color would be better here?
+        Black or white?\". So I decided to leave the choice to you.
+        \n
+        \n • About languages: Since the API does not provide the ability to receive data in different
+        languages in a convenient format, there will be some problems and limitations in translation.
+        But here\'s the main thing that can be said about languages:
+        \n - The application interface is fully translated wherever possible;
+        \n - The data received from the API is translated only into Ukrainian and English, but usually,
+        in Ukrainian, they will be in a shortened format, and in English - in full. If you choose Russian,
+        the API data will be in Ukrainian.
+        \n
+        \n • About \'Weekday text type in the schedule\': When you open the schedule page, for
+        convenience, the day of the week is displayed below the date. And you have the option to choose
+        whether it will be \'Thursday\' or \'Thu\'.
+        \n
+        \n • About \'Lesson type text type\': When you open the schedule page, the type of lesson is displayed
+        at the top right. And you can choose how it will be displayed.
+        \nExamples: Lecture lesson, Lecture, Lec. Or Laboratory lesson, Laboratory, Lab.
+        \n
+        \n • About \'Date format\': When you want to choose your own day of the week, the date format will depend
+        on this setting. Also, when you are on the schedule page, it will be displayed in this format.
+    </string>
+    <!--    Info about app -->
+    <string name="info_about_app_content">
+        <![CDATA[<h1>General Information:</h1>]]>
+        From the very beginning, this app was created as a faster and more convenient way to find out
+        the schedule, avoiding the use of bots in messengers and the website. But over time, I decided
+        to add more functionality, although it still performs its main task excellently.
+        <![CDATA[<h1>About the Developers:</h1>]]>
+        The app itself was created by a student of the State Tax University, KB-23-1 group
+        (at least, at the time of creating the app, I was in this group), Kovalskyi Andrii
+        Oleksandrovych (born in 2004). But this app wouldn\'t look like it does now without
+        the help of a student from the same university and the group, Hnylosyra Oleksandr Sergiyovych
+        (born in 2003). He helped with the overall look of the app.
+        <![CDATA[<h1>Agreement Terms:</h1>]]>
+        First of all, I want to say that the app does not store any data that can be used against
+        you. It only stores the following data: your group identifier and its name,
+        your faculty identifier, your course, the time of the last data check, saved
+        settings.
+        <![CDATA[<br/>]]>
+        This means that you automatically agree to have this data saved and used
+        for more convenient use of the app. If you disagree, the only thing you can do
+        is delete the app and not use it.
+        <![CDATA[<br/>]]>
+        Also, you agree that the app will send information to the developer about what
+        you opened the app and what you used it for. This is necessary for analyzing what may need
+        to be changed or removed in the app.
+        <![CDATA[<h1>What Can the App Do?</h1>]]>
+        The app can do the following:
+        - show you today\'s schedule using only 2 clicks, one of which is opening the app;
+        <![CDATA[<br/>]]>
+        - choose and change your group;
+        <![CDATA[<br/>]]>
+        - see the bell schedule;
+        <![CDATA[<br/>]]>
+        - choose settings to your liking.
+        <![CDATA[<br/>]]>
+        Most likely, this functionality will remain and will not change.
+        <![CDATA[<h1>Contact Information:</h1>]]>
+        You can find me on Telegram (+380731029662, username - \@Dublongold), Viber
+        (+380731029662). You can also write to the email dublon123gold@gmail.com.
+        <![CDATA[<br/>]]>
+        It is preferable to use them only in case of any malfunctions in the app or if you have
+        suggestions for its improvement.
+    </string>
+    <!-- Button -->
+    <string name="save">Save</string>
+    <string name="look_again">Look Again</string>
+    <string name="close">Close</string>
+    <!-- Other -->
+    <string name="white">White</string>
+    <string name="black">Black</string>
+    <string name="select_language">Language:</string>
+    <string name="select_weekday_text_size">Weekday text type in the schedule:</string>
+    <string name="select_lesson_type_text_type">Lesson type text type:</string>
+    <string name="select_date_format">Date format:</string>
+    <string name="question">\?</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="unsaved_changes">
+        It seems you have unsaved changes. Do you want to save them, or do you want to look again?
+    </string>
+    <string name="bell_schedule_item_start_time">Start: %s</string>
+    <string name="bell_schedule_item_end_time">End: %s</string>
+    <string name="bell_schedule_item_break">Break: %d min.</string>
+    <string name="translate">Translating…</string>
+</resources>

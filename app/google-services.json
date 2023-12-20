@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "386990153012",
+    "project_id": "stu-schedule",
+    "storage_bucket": "stu-schedule.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386990153012:android:09bcb6e711914ec7765961",
+        "android_client_info": {
+          "package_name": "com.helpful.stuSchedule"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDruSCH_Ic0auvYV2LW83HPVKaOk9ZJFSg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

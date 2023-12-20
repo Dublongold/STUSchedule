@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="@color/break_between_lessons"
+    android:background="@drawable/lesson_background"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginVertical="10dp"
+    android:layout_width="320dp"
+    android:layout_height="35dp">
+    <TextView
+        android:id="@+id/bellScheduleItemNumber"
+        android:layout_width="46dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:text="1"
+        app:drawableEndCompat="@drawable/entity_border" />
+    <TextView
+        android:id="@+id/bellScheduleItemStartTime"
+        android:layout_width="137dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        app:drawableEndCompat="@drawable/entity_border"
+        tools:text="Початок: 12:34"/>
+    <TextView
+        android:id="@+id/bellScheduleItemEndTime"
+        android:layout_width="137dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:text="Кінець: 56:78"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

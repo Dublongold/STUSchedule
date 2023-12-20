@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="current_item">@color/black</color>
+
+    <color name="lessons_reloads">#59000000</color>
+
+    <color name="break_between_lessons">#FF1E6706</color>
+    <color name="lecture_lesson">#FF1E6706</color>
+    <color name="practical_lesson">#FF0505E3</color>
+    <color name="seminar_lesson">#FFA00808</color>
+    <color name="laboratory_lesson">#FFF89500</color>
+
+    <color name="passed_lesson">#FF585858</color>
+
+    <!-- Theme colors: -->
+    <color name="orange_primary">#FFFF9900</color>
+    <color name="orange_secondary">#FFFFB800</color>
+    <color name="orange_background">#FFFFEFC7</color>
+
+    <color name="purple_primary">#FF7102E0</color>
+    <color name="purple_secondary">#FF6F2EB0</color>
+    <color name="purple_background">#FF00005B</color>
+
+    <color name="black_primary">#FF2D2D2D</color>
+    <color name="black_secondary">#FF2C2C2C</color>
+    <color name="black_background">@color/black</color>
+    <!-- For orange -->
+    <color name="text_hint_color">#77FFFFFF</color>
+    <color name="text_hint_orange_color">#77000000</color>
+    <!-- ScrollView colors -->
+    <color name="scroll_view_thumb_white">#AAFFFFFF</color>
+    <color name="scroll_view_thumb_black">#AA000000</color>
+
+</resources>

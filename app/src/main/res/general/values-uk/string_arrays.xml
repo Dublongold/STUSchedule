@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="date_formats">
+        <item>ДД-ММ-РРРР</item>
+        <item>РРРР-ММ-ДД</item>
+        <item>ММ-ДД-РРРР</item>
+        <item>РРРР-ДД-ММ</item>
+    </string-array>
+</resources>

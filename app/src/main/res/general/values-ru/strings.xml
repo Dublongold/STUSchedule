@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App title -->
+    <string name="app_name">Расписание ГНУ</string>
+    <!-- General -->
+    <string name="error">Ошибка</string>
+    <!-- Buttons -->
+    <string name="cancel">Отменить</string>
+    <!-- Descriptions -->
+    <string name="sorry_but_in_is_not_implemented" translatable="false">
+        Извините, но эта функция не реализована пока что.
+    </string>
+    <string name="back_button_description">Покинуть страницу</string>
+</resources>

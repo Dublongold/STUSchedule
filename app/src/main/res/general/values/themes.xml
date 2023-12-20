@@ -1,0 +1,45 @@
+<resources>
+
+    <style name="App.Theme.DPUSchedule" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:statusBarColor">?appPrimaryColor</item>
+        <item name="android:textViewStyle">@style/App.TextView</item>
+        <item name="android:buttonStyle">@style/App.AppCompatButton</item>
+        <item name="android:alertDialogStyle">@style/App.AlertDialog</item>
+        <item name="android:spinnerStyle">@style/App.Spinner</item>
+        <item name="android:scrollViewStyle">@style/App.ScrollView</item>
+        <item name="android:progressBarStyle">@style/App.ProgressBar</item>
+        <item name="android:radioButtonStyle">@style/App.RadioButton</item>
+    </style>
+
+    <style name="Orange.Theme.DPUSchedule" parent="App.Theme.DPUSchedule">
+        <item name="appPrimaryColor">@color/orange_primary</item>
+        <item name="appSecondaryColor">@color/orange_secondary</item>
+        <item name="appBackground">@color/orange_background</item>
+        <item name="appTextColor">@color/black</item>
+        <item name="appTextColorHint">@color/text_hint_orange_color</item>
+        <item name="appScrollViewThumbColor">@color/scroll_view_thumb_black</item>
+        <item name="lessonStrokeDrawable">@drawable/current_item_on_orange_foreground</item>
+    </style>
+
+    <style name="Purple.Theme.DPUSchedule" parent="App.Theme.DPUSchedule">
+        <item name="appPrimaryColor">@color/purple_primary</item>
+        <item name="appSecondaryColor">@color/purple_secondary</item>
+        <item name="appBackground">@color/purple_background</item>
+        <item name="appTextColor">@color/white</item>
+        <item name="appTextColorHint">@color/text_hint_color</item>
+        <item name="appScrollViewThumbColor">@color/scroll_view_thumb_white</item>
+        <item name="lessonStrokeDrawable">@drawable/current_item_foreground</item>
+    </style>
+
+    <style name="Black.Theme.DPUSchedule" parent="App.Theme.DPUSchedule">
+        <item name="appPrimaryColor">@color/black_primary</item>
+        <item name="appSecondaryColor">@color/black_secondary</item>
+        <item name="appBackground">@color/black_background</item>
+        <item name="appTextColor">@color/white</item>
+        <item name="appTextColorHint">@color/text_hint_color</item>
+        <item name="appScrollViewThumbColor">@color/scroll_view_thumb_white</item>
+        <item name="lessonStrokeDrawable">@drawable/current_item_foreground</item>
+    </style>
+
+    <style name="Theme.DPUSchedule" parent="Black.Theme.DPUSchedule" />
+</resources>

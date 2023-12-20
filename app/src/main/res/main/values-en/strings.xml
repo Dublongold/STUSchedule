@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Titles -->
+    <string name="select_weekday_title">Select Weekday</string>
+    <string name="schedule_date">Schedule for %s\n(%s)</string>
+    <!-- Descriptions -->
+    <string name="app_logo_description">University logo</string>
+    <!-- Contents -->
+    <!--    Select weekday -->
+    <string name="select_weekday_text">Choose the desired day of the week and then press the
+        \"Confirm\" button. The schedule will be displayed for the day of the week that is either
+        today or upcoming. So, if you choose \"Monday\" on Tuesday, you will get the schedule for the
+        next Monday.
+        \nBut if you want to view the schedule for a specific day (for example, yesterday), then
+        select the \"Choose Your Own\" option and enter the full date of the day in the window that
+        appears. If anything, the initial date will correspond to today\'s date.
+</string>
+    <string name="date_format">The next date format is: %s, where D - the day of week number, M -
+        the month number, and Y - the year number. Use the following symbols as number separators
+        (or a simple space character): \"\\\", \".\", \"-\", \"/\".
+    </string>
+    <!--    Loading -->
+    <string name="loading_page_text">Schedule of lessons at\nState Tax University</string>
+    <string name="loading_text">Please wait, data verification is in progress…</string>
+    <!-- Additional content -->
+    <!--    Select weekday -->
+    <string name="weekday_hint">Day:</string>
+    <string name="your_group">Your group: %s</string>
+    <string name="date_format_string">%02d-%02d-%02d</string>
+
+    <string name="invalid_date">Error!</string>
+    <string name="date_error_message_format_string">%s\n%s</string>
+    <!--    Schedule -->
+    <!--        Number of lesson -->
+    <string name="lesson_number">Lesson %d</string>
+    <string name="break_between_lessons">Break between lessons: %d min.</string>
+    <string name="there_are_no_lessons">No lessons.</string>
+    <string name="invalid_group">An error occurred while obtaining the schedule, specifically with
+    the identifier of your group.
+    \nThis may be due to changes in group identifiers on the server or somehow the identifier
+    changed on your device.
+    \nTo receive the schedule for your group, you need to leave this page by
+    pressing the exit button in the upper-left corner, or by pressing the \"Back\" button on your
+    device. Then, you need to \"change\" your group. In fact, you just specify the same
+    group but update the identifier that was saved on your device to the current one.
+</string>
+    <string name="updates">Updates…</string>
+    <!--        End time of schedule item-->
+    <string name="end_time_of_schedule_item">Time left until the end of %s: %d min.</string>
+    <string name="time_left_to_lessons">Time left until the start of classes: %d min.</string>
+    <string name="of_lesson">lesson</string>
+    <string name="of_break_between_lessons">break</string>
+    <!-- Buttons -->
+    <string name="see">See</string>
+    <string name="change">Change</string>
+    <string name="students_list">Students List</string>
+    <string name="bell_schedule">Bell Schedule</string>
+    <string name="info_about_app">App Information</string>
+    <string name="settings">Settings</string>
+
+</resources>

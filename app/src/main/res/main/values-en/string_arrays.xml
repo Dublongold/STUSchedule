@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_weekday_options">
+        <item>Today</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Choose own</item>
+    </string-array>
+    <string-array name="date_error_messages">
+        <item>Your date must not be empty.</item>
+        <item>Your date must be in the following format: %s, where D - day of month number,
+            M - month number and Y - year number. Characters around separators must be only numbers.
+        </item>
+        <item>Your date must contain only numbers and 2 separator characters.</item>
+        <item>Your date must be in range from %d to %d. The specified year: %d.</item>
+        <item>Your month must be in range from 1 to 12. The specified month: %d.</item>
+        <item>Your day of month must be in range from 1 to %d. The specified day of month:
+            %d.
+        </item>
+        <item>But… I don\'t know what\'s wrong…</item>
+    </string-array>
+    <string-array name="very_short_lesson_types">
+        <item>Lec</item>
+        <item>Pr</item>
+        <item>Sem</item>
+        <item>Lab</item>
+        <item>Exm</item>
+        <item>Offs</item>
+        <item>ILec</item>
+        <item>ConsExm</item>
+    </string-array>
+    <string-array name="short_lessons_type">
+        <item>Lecture</item>
+        <item>Practice</item>
+        <item>Seminar</item>
+        <item>Laboratory</item>
+        <item>Exam</item>
+        <item>Offset</item>
+        <item>Inter. lecture</item>
+        <item>Cons. bef. exam</item>
+    </string-array>
+    <string-array name="full_lessons_type">
+        <item>Lecture lesson</item>
+        <item>Practice lesson</item>
+        <item>Seminar lesson</item>
+        <item>Laboratory lesson</item>
+        <item>Exam session</item>
+        <item>Offset</item>
+        <item>Interactive lecture</item>
+        <item>Consultation before exam</item>
+    </string-array>
+    <string-array name="full_weekdays">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string-array name="short_weekdays">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+</resources>

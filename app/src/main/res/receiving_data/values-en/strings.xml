@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Titles -->
+    <string name="welcome">Welcome</string>
+    <string name="want_change_group_title">Change Group</string>
+    <string name="data_confirmation_title">Data Confirmation</string>
+    <string name="structure_title">Select Structure</string>
+    <string name="faculty_title">Select Faculty</string>
+    <string name="course_title">Select Course</string>
+    <string name="group_title">Select Group</string>
+    <!-- Labels -->
+    <string name="structure_label">Structure:</string>
+    <string name="faculty_label">Faculty:</string>
+    <string name="course_label">Course:</string>
+    <string name="group_label">Group:</string>
+    <!-- Contents -->
+    <string name="structure_text">Let\'s start with selecting the structure. I believe your structure is likely
+        the State Tax University. But wait for the data to load,
+        check if it\'s indeed the State Tax University (or just STU), and then press the \"Next\" button.
+    </string>
+    <string name="faculty_text">Great! You\'ve chosen the structure <![CDATA[<b>%s</b>]]>.
+        <![CDATA[<br>]]>Now, after the data is loaded, select your faculty. For example, if you are studying
+        in the \"Computer Science\" specialty, your faculty is
+        \"Finance and Digital Technologies.\" But due to the peculiarities of the university\'s API, it may
+        be shortened to \"F-T Finance and DT.\" So don\'t be alarmed by the simple lettering, just compare
+        the faculties in the list with yours and choose the correct one.
+        <![CDATA[<br>]]>After successfully selecting your faculty, press the \"Next\" button.
+    </string>
+    <string name="course_text">Great! You\'ve chosen the structure <![CDATA[<b>%s</b>]]> and the faculty
+        <![CDATA[<b>%s</b>]]>.
+        <![CDATA[<br>]]>Now you need to choose the course you are studying. Wait for the data to load,
+        choose your course, and press the \"Next\" button.
+    </string>
+    <string name="group_text">Great! We\'re almost done. You\'ve chosen the structure
+        <![CDATA[<b>%s</b>]]>, faculty <![CDATA[<b>%s</b>]]>, and course <![CDATA[<b>%s</b>]]>.
+        <![CDATA[<br>]]>Now you need to choose your group. As in the previous steps, wait for the data to finish
+        loading, then choose your group. After that, press the \"Next\" button
+        and check if everything is correctly specified.
+    </string>
+    <string name="welcome_text">This app was created so that students of the State
+        Tax University could find the schedule for their group in just 1-3 clicks without any authorization.
+        \nBut since there are many groups, the college\'s API does not allow
+        to immediately select the correct group, and you have just launched this app for the first time, so we will step by step
+        narrow down the number of groups and then choose your group.
+        \n
+        \nThe steps will be as follows:
+        \n- specifying your structure;
+        \n- specifying your faculty;
+        \n- specifying your course;
+        \n- selecting your group;
+        \n- confirming the selected data.
+        \n
+        \nIf you\'re ready, press the \"Next\" button and let\'s get started!
+    </string>
+    <string name="want_change_group_text">If you want to change the group, you need to go through all
+        the same steps as in the welcome message. Let me remind you of them:
+        \n
+        \n- specifying your structure;
+        \n- specifying your faculty;
+        \n- specifying your course;
+        \n- selecting your group;
+        \n- confirming the selected data.
+        \n
+        \nIf you\'re ready, press the \"Next\" button and let\'s get started, or if you\'ve changed your mind,
+        press the \"Cancel\" button.
+    </string>
+    <string name="data_confirmation_text">Congratulations! You\'ve provided all the necessary information and selected your group:
+        <![CDATA[<b>%s</b>]]>.
+        <![CDATA[<br>]]>
+        <![CDATA[<br>]]>If everything is correct, press the \"Confirm\" button and you will be taken to the page with
+        the schedule selection for your group. If necessary, you can change
+        your group in the future.
+        <![CDATA[<br>]]>
+        <![CDATA[<br>]]>But if any data does not match, press the \"Back\" button and change what was
+        incorrectly specified.
+    </string>
+    <string name="data_changed_text">Of course, you wanted to see the schedule, but it turns out that on
+        the server the data has changed, and your group (or just its identifier) now differs from
+        what is saved on your device.
+        \n
+        \nSo you need to go through the same steps again that you went through in the welcome message. Let me
+        remind you of them:
+        \n
+        \n- specifying your structure;
+        \n- specifying your faculty;
+        \n- specifying your course;
+        \n- selecting your group;
+        \n- confirming the selected data.
+        \n
+        \nIf you\'re ready, press the \"Next\" button and let\'s get started!
+    </string>
+    <!-- Buttons -->
+    <string name="confirm">Confirm</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+</resources>

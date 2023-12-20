@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App title -->
+    <string name="app_name">Розклад ДПУ</string>
+    <!-- General -->
+    <string name="error">Помилка</string>
+    <!-- Buttons -->
+    <string name="cancel">Скасувати</string>
+    <!-- Descriptions -->
+    <string name="sorry_but_in_is_not_implemented">
+        Вибачте, але поки що ця функція не доступна.
+    </string>
+    <string name="back_button_description">Покинути сторінку</string>
+</resources>

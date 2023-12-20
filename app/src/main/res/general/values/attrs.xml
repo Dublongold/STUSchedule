@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="KebabMenuView">
+        <attr name="menuId" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="TitleTextView">
+        <attr name="withBackButton" format="boolean"/>
+        <attr name="defaultTitleTextSize" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="View">
+        <attr name="themeFlags" format="string"/>
+    </declare-styleable>
+
+    <attr name="appPrimaryColor" format="color"/>
+    <attr name="appSecondaryColor" format="color"/>
+    <attr name="appBackground" format="color|reference"/>
+    <attr name="appTextColor" format="color"/>
+    <attr name="appTextColorHint" format="color"/>
+    <attr name="appScrollViewThumbColor" format="color"/>
+    <attr name="lessonStrokeDrawable" format="reference"/>
+</resources>

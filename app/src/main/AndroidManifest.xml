@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DPUSchedule"
         android:usesCleartextTraffic="true"
-        tools:targetApi="31">
+        android:localeConfig="@xml/locale_config"
+        tools:targetApi="tiramisu">
         <activity
             android:name=".MainActivity"
             android:screenOrientation="locked"

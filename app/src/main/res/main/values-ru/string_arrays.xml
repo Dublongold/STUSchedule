@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_weekday_options">
+        <item>Сегодня</item>
+        <item>Понедельник</item>
+        <item>Вторник</item>
+        <item>Среда</item>
+        <item>Четверг</item>
+        <item>Пятница</item>
+        <item>Выбрать свой</item>
+    </string-array>
+    <string-array name="date_error_messages">
+        <item>Ваша дата не должна быть пустою.</item>
+        <item>Ваша дата должна быть в следующем формате: %s, где Д - число дня, М - число месяца и
+            Г - число года. Символи вокруг разделителей должны быть только числами.</item>
+        <item>Ваша дата должна состоять только из чисел та двох символов-разделителей.</item>
+        <item>Ваш год должен быть в пределах от %d до %d. Указаный год: %d.</item>
+        <item>Ваш місяць має бути в межах від 1 до 12. Указаный месяц: %d.</item>
+        <item>Ваш день месяца должен быть от 1 до %d. Указаный день месяца: %d.</item>
+        <item>Но… Я не знаю что не та…</item>
+    </string-array>
+    <string-array name="very_short_lesson_types">
+        <item>Лк</item>
+        <item>Пз</item>
+        <item>Сем</item>
+        <item>Лаб</item>
+        <item>Экз</item>
+        <item>Зач</item>
+        <item>УЛк</item>
+        <item>КонсЭкз</item>
+    </string-array>
+    <string-array name="short_lessons_type">
+        <item>Лекция</item>
+        <item>Практическая</item>
+        <item>Семинар</item>
+        <item>Лабораторная</item>
+        <item>Экзамен</item>
+        <item>Зачет</item>
+        <item>Устная лекция</item>
+        <item>Конс. к экзам.</item>
+    </string-array>
+    <string-array name="full_lessons_type">
+        <item>Лекционное занятие</item>
+        <item>Практическое занятие</item>
+        <item>Семинарское занятие</item>
+        <item>Лабораторное занятие</item>
+        <item>Экзаменационное занятие</item>
+        <item>Зачёт</item>
+        <item>Устная лекция</item>
+        <item>Консультация к экзамену</item>
+    </string-array>
+    <string-array name="full_weekdays">
+        <item>Воскресенье</item>
+        <item>Понедельник</item>
+        <item>Вторник</item>
+        <item>Среда</item>
+        <item>Четверг</item>
+        <item>Пятница</item>
+        <item>Суббота</item>
+    </string-array>
+    <string-array name="short_weekdays">
+        <item>Вс</item>
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Чт</item>
+        <item>Пт</item>
+        <item>Сб</item>
+    </string-array>
+</resources>

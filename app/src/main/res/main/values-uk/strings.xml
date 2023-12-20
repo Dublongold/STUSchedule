@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Titles -->
+    <string name="select_weekday_title">Вибір дня тижня</string>
+    <string name="schedule_date">Розклад на %s\n(%s)</string>
+    <!-- Descriptions -->
+    <string name="app_logo_description">Логотип університету</string>
+    <!-- Contents -->
+    <!--    Select weekday -->
+    <string name="select_weekday_text">Оберіть потрібний день тижня і потім нажміть на кнопку
+        \"Підтвердити\". Розклад буде виводитися на день тижня, який або сьогодні, або настане.
+        Тобто, обравши \"Понеділок\" у вівторок, ви отримаєте розклад на наступний понеділок.
+        \nАле якщо ви бажаєте переглянути розклад за конкретний день (наприклад, за вчора), то
+        оберіть варіант \"Обрати власний\" і введіть повну дату дня у вікні, яке з\'явиться.
+        Якщо що, то початкова дата буде відповідати сьогоднішньому дню.
+    </string>
+    <string name="date_format">Формат дати наступний: %s, де Д - число дня, М - число місяця та
+        Р - число року. В якості розділювача чисел, використовуйте наступні символи
+        (або можна простий символ пробілу): \"\\\", \".\", \"-\", \"/\".
+    </string>
+    <!--    Loading -->
+    <string name="loading_page_text">Розклад занять в\nДержавному податковому університеті</string>
+    <string name="loading_text">Почекайте будь-ласка, йде перевірка даних…</string>
+    <!-- Additional content -->
+    <!--    Select weekday -->
+    <string name="weekday_hint">День:</string>
+    <string name="your_group">Ваша група: %s</string>
+    <string name="date_format_string">%02d-%02d-%02d</string>
+
+    <string name="invalid_date">Помилка!</string>
+    <string name="date_error_message_format_string">%s\n%s</string>
+    <!--    Schedule -->
+    <!--        Number of lesson -->
+    <string name="lesson_number">Пара %d</string>
+    <string name="break_between_lessons">Перерва між парами: %d хв.</string>
+    <string name="there_are_no_lessons">Пар немає.</string>
+    <string name="invalid_group">Виникла помилка під час отримання розкладу, а саме проблема з
+        ідентифікатором вашої групи.
+        \nЦе може бути через те, що на сервері були змінені ідентифікатори груп або якимось чином
+        ідентифікатор змінився на вашому пристрої.
+        \nТому, щоб отримувати розклад для вашої групи, вам потрібно покинути цю сторінку шляхом
+        натискання на кнопку виходу зліва-зверху, або натисканням кнопки \"Назад\" на вашому
+        пристрої. Потім, ви маєте \"змінити\" вашу групу. Насправді, ви просто вкажете ту ж саму
+        групу, але оновите ідентифікатор, який був збережений у вас на пристрої, на актуальний.
+    </string>
+    <string name="updates">Оновлення…</string>
+    <!--        End time of schedule item-->
+    <string name="end_time_of_schedule_item">До кінця %s залишилось %d хв.</string>
+    <string name="time_left_to_lessons">До початку занять залишилось %d хв.</string>
+    <string name="of_lesson">заняття</string>
+    <string name="of_break_between_lessons">перерви</string>
+    <!-- Buttons -->
+    <string name="see">Побачити</string>
+    <string name="change">Змінити</string>
+    <string name="students_list">Список студентів</string>
+    <string name="bell_schedule">Розклад дзвінків</string>
+    <string name="info_about_app">Інформація про додаток</string>
+    <string name="settings">Налаштування</string>
+</resources>

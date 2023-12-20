@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ThemeItemView">
+        <attr name="themeDrawable" format="reference"/>
+        <attr name="isSelectedTheme" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,19 @@
+<resources>
+    <!-- App title -->
+    <string name="app_name">Розклад ДПУ</string>
+    <!-- General -->
+    <string name="error">Помилка</string>
+    <!-- Buttons -->
+    <string name="cancel">Скасувати</string>
+    <!-- Module titles -->
+    <string name="title_receiving_data" translatable="false">Receiving data</string>
+    <string name="title_data" translatable="false">Data</string>
+    <string name="title_helpful" translatable="false">Helpful</string>
+    <string name="title_ui" translatable="false">Ui</string>
+    <string name="title_main" translatable="false">Main</string>
+    <string name="title_other" translatable="false">Other</string>
+    <string name="sorry_but_in_is_not_implemented">
+        Вибачте, але поки що ця функція не доступна.
+    </string>
+    <string name="back_button_description">Покинути сторінку</string>
+</resources>

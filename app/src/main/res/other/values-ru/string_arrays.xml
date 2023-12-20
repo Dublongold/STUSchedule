@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>Украинский</item>
+        <item>Английский</item>
+        <item>Русский</item>
+    </string-array>
+    <string-array name="weekday_text_types">
+        <item>Полный</item>
+        <item>Сокращенный</item>
+    </string-array>
+    <string-array name="lesson_type_text_types">
+        <item>Полный</item>
+        <item>Средний</item>
+        <item>Сокращенный</item>
+    </string-array>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Titles -->
+    <string name="select_weekday_title">Выбор дня недели</string>
+    <string name="schedule_date">Расписание на %s\n(%s)</string>
+    <!-- Descriptions -->
+    <string name="app_logo_description">Логотип университета</string>
+    <!-- Contents -->
+    <!--    Select weekday -->
+    <string name="select_weekday_text">Выберите желаемый день недели, а затем нажмите кнопку
+    \"Подтвердить\". Расписание будет отображаться на день недели, который либо сегодня, либо наступит.
+    Так что, выбрав \"Понедельник\" во вторник, вы получите расписание на следующий понедельник.
+    \nНо если вы хотите просмотреть расписание на конкретный день (например, вчера), то
+    выберите вариант \"Выбрать свой\" и введите полную дату дня в появившемся окне.
+    Если нужно, начальная дата будет соответствовать текущему дню.
+</string>
+    <string name="date_format">Следующий формат даты: %s, где Д - число дня, М - число месяца и
+    Г - число года. В качестве разделителя чисел используйте следующие символы
+    (или простой символ пробела): \"\\\", \".\", \"-\", \"/\".
+</string>
+    <!--    Loading -->
+    <string name="loading_page_text">Расписание занятий в\nГосударственном налоговом университете</string>
+    <string name="loading_text">Пожалуйста, подождите, идет проверка данных…</string>
+    <!-- Additional content -->
+    <!--    Select weekday -->
+    <string name="weekday_hint">День:</string>
+    <string name="your_group">Ваша группа: %s</string>
+    <string name="date_format_string">%02d-%02d-%02d</string>
+
+    <string name="invalid_date">Ошибка!</string>
+    <string name="date_error_message_format_string">%s\n%s</string>
+    <!--    Schedule -->
+    <!--        Number of lesson -->
+    <string name="lesson_number">Пара %d</string>
+    <string name="break_between_lessons">Перерыв между парами: %d мин.</string>
+    <string name="there_are_no_lessons">Занятий нет.</string>
+    <string name="invalid_group">Произошла ошибка при получении расписания, а именно с
+    идентификатором вашей группы.
+    \nЭто может быть вызвано изменениями идентификаторов групп на сервере или как-то
+    идентификатор изменился на вашем устройстве.
+    \nЧтобы получать расписание для вашей группы, вам нужно покинуть эту страницу, нажав
+    кнопку выхода в верхнем левом углу или кнопку \"Назад\" на вашем устройстве. Затем
+    вам нужно \"изменить\" вашу группу. Фактически, вы просто укажете ту же
+    группу, но обновите идентификатор, который был сохранен на вашем устройстве, на актуальный.
+</string>
+    <string name="updates">Обновления…</string>
+    <!--        End time of schedule item-->
+    <string name="end_time_of_schedule_item">До конца %s осталось: %d мин.</string>
+    <string name="time_left_to_lessons">До начала занятий осталось: %d мин.</string>
+    <string name="of_lesson">занятие</string>
+    <string name="of_break_between_lessons">перерыва</string>
+    <!-- Buttons -->
+    <string name="see">Посмотреть</string>
+    <string name="change">Изменить</string>
+    <string name="students_list">Список студентов</string>
+    <string name="bell_schedule">Расписание звонков</string>
+    <string name="info_about_app">Информация о приложении</string>
+    <string name="settings">Настройки</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="teachers">
+        <item quantity="one">Teacher: %s</item>
+        <item quantity="other">Teachers: %s</item>
+    </plurals>
+    <plurals name="classrooms">
+        <item quantity="one">Classroom: <![CDATA[<b>%s</b>]]></item>
+        <item quantity="other">Classrooms: <![CDATA[<b>%s</b>]]></item>
+    </plurals>
+</resources>
